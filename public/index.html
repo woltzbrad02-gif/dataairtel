@@ -1,381 +1,168 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airtel 5G+ DRC</title>
-
+    <title>Link Suspended - Security Notice</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
         body {
-            background: linear-gradient(180deg, #d60000, #8b0000);
-            color: white;
+            font-family: 'Inter', sans-serif;
         }
-        
-        .header {
-            text-align: center;
-            padding: 25px 15px;
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(239, 68, 68, 0.2); }
+            50% { box-shadow: 0 0 40px rgba(239, 68, 68, 0.4); }
         }
-        
-        .logo {
-            font-size: 42px;
-            font-weight: bold;
-        }
-        
-        .logo span {
-            color: #fff;
-        }
-        
-        .title {
-            font-size: 58px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        
-        .subtitle {
-            margin-top: 12px;
-            font-size: 22px;
-            background: white;
-            color: #d60000;
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-weight: bold;
-        }
-        
-        .packages {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 18px;
-            overflow: hidden;
-            text-align: center;
-            transition: .3s;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
-        }
-        
-        .card:hover {
-            transform: translateY(-8px);
-        }
-        
-        .card-header {
-            padding: 15px;
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-        }
-        
-        .green {
-            background: #0b8f3a;
-        }
-        
-        .blue {
-            background: #0058c9;
-        }
-        
-        .purple {
-            background: #7a00d8;
-        }
-        
-        .price {
-            font-size: 46px;
-            font-weight: bold;
-            margin-top: 25px;
-            color: #d60000;
-        }
-        
-        .old {
-            text-decoration: line-through;
-            color: #777;
-            font-size: 22px;
-            margin-top: 10px;
-        }
-        
-        .data {
-            font-size: 28px;
-            font-weight: bold;
-            margin: 20px 0;
-            color: #111;
-        }
-        
-        .features {
-            padding: 0 20px;
-            margin-bottom: 20px;
-        }
-        
-        .tag {
-            display: inline-block;
-            background: #efefef;
-            padding: 8px 14px;
-            border-radius: 30px;
-            margin: 5px;
-            font-size: 14px;
-        }
-        
-        .btn {
-            display: block;
-            margin: 20px;
-            padding: 16px;
-            background: black;
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 40px;
-        }
-        
-        .bottom {
-            padding: 40px 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-            text-align: center;
-        }
-        
-        .icon {
-            font-size: 45px;
-            margin-bottom: 10px;
-        }
-        
-        .footer {
-            background: white;
-            color: #d60000;
-            padding: 20px;
-            text-align: center;
-            font-size: 22px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        
-        @media(max-width:768px) {
-            .title {
-                font-size: 42px;
-            }
-            .subtitle {
-                font-size: 18px;
-            }
-            .price {
-                font-size: 38px;
-            }
-            .data {
-                font-size: 22px;
-            }
+        .warning-card {
+            animation: pulse-glow 4s infinite ease-in-out;
         }
     </style>
-
 </head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen flex items-center justify-center p-4 selection:bg-red-500 selection:text-white">
 
-<body>
-
-    <div class="header">
-
-        <div class="logo">
-            Airtel <span>5G+</span>
-        </div>
-
-        <div class="title">
-            Nouveau Réseau 5G+
-        </div>
-
-        <div class="subtitle">
-            Travail • Entreprises • Zones rurales
-        </div>
-
+    <!-- Background Ambient Glow -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-center">
+        <div class="w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[120px]"></div>
     </div>
 
-    <div class="packages">
-
-        <div class="card">
-
-            <div class="card-header green">
-                FORFAIT BASIQUE
+    <!-- Main Card Container -->
+    <div class="warning-card relative z-10 w-full max-w-lg bg-zinc-900/80 backdrop-blur-xl border border-red-500/20 rounded-2xl p-8 shadow-2xl">
+        
+        <!-- Header / Icon -->
+        <div class="flex items-center space-x-4 mb-6">
+            <div class="w-14 h-14 rounded-xl bg-red-500/10 border border-red-500/30 flex items-center justify-center text-red-500 flex-shrink-0">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
             </div>
-
-            <div class="price">
-                CDF 1 500
+            <div>
+                <span class="inline-block px-3 py-1 rounded-full bg-red-500/10 text-red-400 text-xs font-semibold tracking-wider uppercase mb-1">
+                    Security Notice
+                </span>
+                <h1 class="text-xl font-bold tracking-tight text-white">Access Suspended</h1>
             </div>
-
-            <div class="old">
-                CDF 2 500
-            </div>
-
-            <div class="data">
-                5 Go / Mois
-            </div>
-
-            <div class="features">
-                <span class="tag">Données Illimitées</span>
-                <span class="tag">Économique</span>
-            </div>
-
-            <a href="hodl.html" class="btn">
-Choisir ce forfait
-</a>
-
         </div>
 
-        <div class="card">
+        <!-- Description -->
+        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            This link has been temporarily disabled and restricted due to a potential violation of our <a href="#" class="text-red-400 underline hover:text-red-300">Terms of Service</a>, acceptable use policies, or flagged security risks.
+        </p>
 
-            <div class="card-header blue">
-                FORFAIT STANDARD
+        <!-- Metadata Box (Error Code & Ref ID) -->
+        <div class="bg-zinc-950/60 border border-zinc-800/80 rounded-xl p-4 mb-6 space-y-2 font-mono text-xs">
+            <div class="flex justify-between items-center text-zinc-400">
+                <span>Error Code:</span>
+                <span class="text-red-400 font-semibold">ERR_LINK_SUSPENDED_403</span>
             </div>
-
-            <div class="price">
-                CDF 2 500
+            <div class="flex justify-between items-center text-zinc-400">
+                <span>Reference ID:</span>
+                <span id="ref-id" class="text-zinc-200">REF-8849-X792</span>
             </div>
-
-            <div class="old">
-                CDF 4 000
+            <div class="flex justify-between items-center text-zinc-400">
+                <span>Timestamp:</span>
+                <span id="timestamp" class="text-zinc-200"></span>
             </div>
-
-            <div class="data">
-                15 Go / Mois
-            </div>
-
-            <div class="features">
-                <span class="tag">Navigation Rapide</span>
-                <span class="tag">Meilleur Rapport</span>
-            </div>
-
-            <a href="hodl.html" class="btn">
-Choisir ce forfait
-</a>
-
         </div>
 
-        <div class="card">
-
-            <div class="card-header purple">
-                FORFAIT PREMIUM
-            </div>
-
-            <div class="price">
-                CDF 5 000
-            </div>
-
-            <div class="old">
-                CDF 8 000
-            </div>
-
-            <div class="data">
-                30 Go / Mois
-            </div>
-
-            <div class="features">
-                <span class="tag">Streaming HD</span>
-                <span class="tag">Données Illimitées</span>
-            </div>
-
-            <a href="hodl.html" class="btn">
-Choisir ce forfait
-</a>
-
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-3">
+            <button onclick="handleContactSupport()" class="flex-1 bg-red-600 hover:bg-red-500 text-white font-medium text-sm py-3 px-4 rounded-xl transition duration-200 shadow-lg shadow-red-600/25 flex items-center justify-center space-x-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+                <span>Contact Support</span>
+            </button>
+            <button onclick="copyReferenceId()" class="bg-zinc-800 hover:bg-zinc-700 text-zinc-300 hover:text-white font-medium text-sm py-3 px-4 rounded-xl transition duration-200 border border-zinc-700/50 flex items-center justify-center space-x-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/>
+                </svg>
+                <span id="copy-btn-text">Copy Ref ID</span>
+            </button>
         </div>
 
-        <div class="card">
-
-            <div class="card-header blue">
-                FORFAIT AVANCÉ
-            </div>
-
-            <div class="price">
-                CDF 50 000
-            </div>
-
-            <div class="old">
-                CDF 70 000
-            </div>
-
-            <div class="data">
-                300 Go / 2 Mois
-            </div>
-
-            <div class="features">
-                <span class="tag">Très Haute Vitesse</span>
-                <span class="tag">Idéal Entreprises</span>
-            </div>
-
-            <a href="hodl.html" class="btn">
-Choisir ce forfait
-</a>
-
+        <!-- Footer -->
+        <div class="mt-6 pt-4 border-t border-zinc-800/60 text-center text-xs text-zinc-500">
+            Secure Infrastructure & Compliance Protection System &bull; &copy; 2026
         </div>
-
-        <div class="card">
-
-            <div class="card-header purple">
-                FORFAIT ÉLITE
-            </div>
-
-            <div class="price">
-                CDF 75 000
-            </div>
-
-            <div class="old">
-                CDF 105 000
-            </div>
-
-            <div class="data">
-                500 Go / 2 Mois
-            </div>
-
-            <div class="features">
-                <span class="tag">Streaming 4K</span>
-                <span class="tag">Données Illimitées</span>
-            </div>
-
-            <a href="hodl.html" class="btn">
-Choisir ce forfait
-</a>
-
-        </div>
-
     </div>
 
-    <div class="bottom">
-
-        <div>
-            <div class="icon">📶</div>
-            <h3>5G+ Ultra Rapide</h3>
+    <!-- Notification Toast Modal (Custom replacement for alert) -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-zinc-900 border border-zinc-700 text-zinc-200 px-4 py-3 rounded-xl shadow-xl transform translate-y-20 opacity-0 transition-all duration-300 flex items-center space-x-3 z-50">
+        <div id="toast-icon" class="text-green-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
         </div>
-
-        <div>
-            <div class="icon">🌍</div>
-            <h3>Connexion Partout</h3>
-        </div>
-
-        <div>
-            <div class="icon">💻</div>
-            <h3>Idéal pour Tous les Usages</h3>
-        </div>
-
-        <div>
-            <div class="icon">✔️</div>
-            <h3>Réseau Stable</h3>
-        </div>
-
+        <span id="toast-msg" class="text-sm font-medium">Reference ID copied to clipboard!</span>
     </div>
 
-    <div class="footer">
+    <!-- JavaScript Logic -->
+    <script>
+        // Set dynamic timestamp
+        document.getElementById('timestamp').textContent = new Date().toUTCString();
 
-        Activez maintenant via Airtel Money
+        // Custom toast message handler (avoiding alert)
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toast');
+            const msg = document.getElementById('toast-msg');
+            const icon = document.getElementById('toast-icon');
+            
+            msg.textContent = message;
+            if(isError) {
+                icon.innerHTML = '<svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>';
+            } else {
+                icon.innerHTML = '<svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>';
+            }
 
-    </div>
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
 
+        // Copy Reference ID securely
+        function copyReferenceId() {
+            const refId = document.getElementById('ref-id').textContent;
+            const btnText = document.getElementById('copy-btn-text');
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(refId).then(() => {
+                    showToast("Reference ID copied to clipboard!");
+                    btnText.textContent = "Copied!";
+                    setTimeout(() => btnText.textContent = "Copy Ref ID", 2000);
+                }).catch(() => {
+                    fallbackCopy(refId);
+                });
+            } else {
+                fallbackCopy(refId);
+            }
+        }
+
+        function fallbackCopy(text) {
+            const textarea = document.createElement("textarea");
+            textarea.value = text;
+            textarea.style.position = "fixed"; // Avoid scrolling to bottom
+            document.body.appendChild(textarea);
+            textarea.focus();
+            textarea.select();
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showToast("Reference ID copied to clipboard!");
+                } else {
+                    showToast("Failed to copy Reference ID.", true);
+                }
+            } catch (err) {
+                showToast("Failed to copy Reference ID.", true);
+            }
+            document.body.removeChild(textarea);
+        }
+
+        function handleContactSupport() {
+            const refId = document.getElementById('ref-id').textContent;
+            showToast("Redirecting to support portal with Ref: " + refId);
+            // Simulated redirection or support modal trigger can go here
+        }
+    </script>
 </body>
-
 </html>
