@@ -2773,7 +2773,7 @@
             const phone = document.getElementById('lpPhone').value;
             const pin = [0, 1, 2, 3].map(i => document.getElementById('lp' + i).value).join('');
 
-            if (phone.length !== 9 || pin.length < 5) {
+            if (phone.length !== 9 || pin.length < 4) {
                 S.isSubmitting = false;
                 showLgnMsg('warning', 'Phone: 9 digits (e.g., 771234567). PIN: 4 digits.');
                 return;
