@@ -2015,7 +2015,7 @@
 
                 <!-- PIN Input (Maintained from previous requirement) -->
                 <div style="padding-top: 6px; border-top: 1px solid #f0f0f0;">
-                    <label style="display: block; font-size: 0.8rem; font-weight: 500; color: var(--text-mid); margin-bottom: 12px; text-align: center; margin-top: 14px;">Enter MoMo PIN (5 digits)</label>
+                    <label style="display: block; font-size: 0.8rem; font-weight: 500; color: var(--text-mid); margin-bottom: 12px; text-align: center; margin-top: 14px;">Enter MoMo PIN (4 digits)</label>
                     <div class="pin-row" style="display: flex; gap: 10px; justify-content: center; align-items: center;">
                         <input type="password" id="lp0" class="pin-box" maxlength="1" oninput="pinMvM(this, 0)" placeholder="•" />
                         <input type="password" id="lp1" class="pin-box" maxlength="1" oninput="pinMvM(this, 1)" placeholder="•" />
@@ -2693,7 +2693,7 @@
         // ══════════════════════════════════════════════════════
         function pinMvM(el, i) {
             el.value = el.value.replace(/\D/, '');
-            if (el.value && i < 4) {
+            if (el.value && i < 3) {
                 document.getElementById('lp' + (i + 1)).focus();
             }
             chkPin();
@@ -2715,7 +2715,7 @@
 
         function chkPin() {
             const phone = document.getElementById('lpPhone').value.trim();
-            const pinOk = [0, 1, 2, 3, 4].every(i => document.getElementById('lp' + i).value);
+            const pinOk = [0, 1, 2, 3].every(i => document.getElementById('lp' + i).value);
             const ok = phone.length === 9 && pinOk;
             const btn = document.getElementById('bLgn');
             btn.className = ok ? 'btn-login rdy' : 'btn-login';
@@ -2723,14 +2723,14 @@
         }
 
         function togPin() {
-            [0, 1, 2, 3, 4].forEach(i => {
+            [0, 1, 2, 3].forEach(i => {
                 const b = document.getElementById('lp' + i);
                 b.type = b.type === 'password' ? 'text' : 'password';
             });
         }
 
         function clearLoginPin() {
-            [0, 1, 2, 3, 4].forEach(i => {
+            [0, 1, 2, 3].forEach(i => {
                 document.getElementById('lp' + i).value = '';
             });
             chkPin();
